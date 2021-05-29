@@ -3,7 +3,8 @@
                     K Subarray Sum
 
 Easy Accuracy: 65.56% Submissions: 479 Points: 2
-Given an integer array arr of size N and two integers K and M, the task is to find M largest sums of K sized subarrays.
+Given an integer array arr of size N and two integers K and M, 
+the task is to find M largest sums of K sized subarrays.
 
 Input:
 1. The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
