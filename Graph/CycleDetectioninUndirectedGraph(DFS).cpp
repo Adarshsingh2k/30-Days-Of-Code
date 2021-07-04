@@ -50,6 +50,7 @@ class Solution
         
         visit[node]=1;
         
+        // check for nabrs of the node
         for(auto nbr:adj[node]){
             
             if(!visit[nbr]){
@@ -57,6 +58,8 @@ class Solution
                 {return true;}
                 
             }
+            // agar nabr element is visited and is not parent
+            // this tells that there is cycle
             else if(nbr!=parent) return true;
             
         }
@@ -69,6 +72,8 @@ class Solution
 	{
 	    // Code here
 	    vector<int>visit(V,0);
+
+	    // check for all unconnected component
 	    for(int i=0;i<V;i++){
 	        if(!visit[i]){
 	            if(cycle(i,-1,visit,adj)) return true;
