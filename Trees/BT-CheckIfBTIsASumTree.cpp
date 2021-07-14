@@ -155,6 +155,9 @@ class Solution
     
     int check(Node * root){
         if(!root) return 0;
+
+         // check sum in whole left tree and whole right tree
+        
         
         return check(root->left)+check(root->right)+root->data;
     }
