@@ -44,6 +44,41 @@ class Solution
         
        
         return dp[x%2][y];
+
+// Print the LCS CODE---
+
+        /*int size=dp[x][y];
+
+        char printLcs[size+1];
+        printLcs[size]='\0';
+
+        int i=x,j=y;
+
+        while(i!=0 and j!=0){
+
+            // hum string ko last se traverse krenge
+            // toh agar last element same hai toh
+            // move to next diagonaly opposite position
+
+            if(s1[i-1]==s2[j-1]){
+                printLcs[size-1]=s1[i-1];
+                i--;
+                j--;
+
+                size--;
+
+
+            }
+
+            // if character are not same move to 
+            // posiyion which max of i-1|j-1
+            else if(dp[i-1][j]>dp[i][j1]) i--;
+
+            else j--;
+
+        }
+
+        cout<<printLcs;*/
     }
 };
 
