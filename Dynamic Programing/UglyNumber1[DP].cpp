@@ -50,15 +50,21 @@ public:
 	    vector<ull> dp(n+1);
 	    dp[1]=1;
 	    
+
+	    // maintain count for the pointer of each 2,3,5
 	    ull m2(1),m3(1),m5(1);
 	    
 	    for(ull i=2;i<=n;i++){
+
+	    // to get the factor of mth number 	
 	       ull f2=2*dp[m2]; 
 	       ull f3=3*dp[m3]; 
 	       ull f5=5*dp[m5]; 
-	       
+	     // get the min factor and push to dp  
 	       ull minF= min(f2,min(f3,f5));
 	       dp[i]=minF;
+
+	       // and increase the count for the number which is minimum min factor belong 
 	       if(minF==f2) m2++;
 	       if (minF==f3) m3++;
 	       if(minF==f5) m5++;
