@@ -1,5 +1,9 @@
 /*
 1658. Minimum Operations to Reduce X to Zero
+
+---> https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/discuss/1445347/Minimum-Operations-to-Reduce-X-to-Zero-C%2B%2B
+---> https://www.youtube.com/watch?v=7nzwrX4N_A0
+
 Medium
 
 1177
